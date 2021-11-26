@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormIFPE</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Formulario de inscrição</legend>
+                <label>Nome</label>
+                <input type="text" name="nome" id="name-input"><br>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome-input"><br>
+                <label>Idade</label>
+                <input type="number" min="18" max="120" name="idade" id="age-input"><br>
+                <label>Emaill</label>
+                <input type="email" name="e-mail" id="mail-input"><br>
+
+            <label>Sexo</label>
+            <label>
+                <input type="radio" name="sexo" value="Masculino" checked>Masculino
+                <input type="radio" name="sexo" value="Feminino">Feminino
+                <br>
+            </label><br>
+
+            <label>Foto</label>
+            <input type="file" accept="image/png, image/jpeg" name="choose file"> <br>
+
+    
+            <label>País</label>
+            <select id="País">
+                <option>China</option>
+                <option>Brasil</option>
+                <option>EUA</option>
+            </select><br><br><br>
+    
+            <label>As linguagens que você prefere?</label>
+            <select name="linguagens" id="languages-select" multiple>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>PHP</option>
+            </select>
+            <label>(Mantenha ctrl pressiondo para varias escolhas)</label><br><br>
+    
+            <label>areas de atuação</label>
+            <input type="checkbox" name="check-computing" id="check-computing" value="computação">
+            <label for="check-computing">computação</label>
+            <input type="checkbox" name="check-adm" id="check-adm" value="gestão">
+            <label for="check-adm">gestão</label>
+            <input type="checkbox" name="check-pedagogy" id="check-pedagogy" value="pedagogia">
+            <label for="check-pedagogy">pedagogia</label><br>
+    
+            <input type="submit" name="enviar" value="enviar">
+            <input type="reset" name="limpar" value="limpar">
+        </fieldset>
+    </form>
+
+    <style>
+        label{
+        display: inline-block;
+        width: 120px;
+        }
+    </style>
+</body>
+</html>
